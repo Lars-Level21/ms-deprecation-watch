@@ -14,8 +14,11 @@ GitHub benachrichtigt dich dann per Mail/App. An ruhigen Tagen kommt nichts.
      gerenderten Seite wird als Snapshot in `state/snapshots/` gespeichert und verglichen.
 2. Claude (`claude-opus-5`) fasst jeden Diff auf Deutsch zusammen und filtert
    Kleinkram (Tippfehler, `ms.date`, Links, Formatierung) heraus.
-3. Gibt es relevante Änderungen oder Fehler, wird ein Issue mit dem Label `deprecation-watch`
-   angelegt. Es enthält Zusammenfassung, Commit-Links und den Diff zum Aufklappen.
+3. Pro Seite mit relevanten Änderungen wird ein **eigenes Issue** angelegt, mit den Labels
+   `deprecation-watch` und dem Produktbereich (z. B. `D365 Sales`). Der Titel enthält die
+   Kernaussage, der Inhalt ist mail-tauglich: pro Abkündigung Termin, Auswirkung und Maßnahme.
+   Den vollständigen Diff legt der Workflow unter `reports/<Datum>/<id>.diff` ab, das Issue
+   verlinkt ihn. Nach dem Review das Issue schließen.
 4. Der Zustand (`state/`) wird vom Workflow zurück ins Repo committed. Durch den täglichen
    Commit bleibt der Repo aktiv, GitHub deaktiviert Schedules sonst nach 60 Tagen Inaktivität.
 
@@ -47,3 +50,5 @@ DRY_RUN=1 .venv/Scripts/python watch.py
 ```
 
 Mit `DRY_RUN=1` wird weder ein Issue angelegt noch der Zustand gespeichert.
+`TEST_REWIND=3` prüft die GitHub-Quellen so, als läge der letzte Check 3 Commits zurück
+(erzwingt Dry-Run). In Actions steht das Gleiche als Eingabe `test_rewind` beim manuellen Start zur Verfügung.

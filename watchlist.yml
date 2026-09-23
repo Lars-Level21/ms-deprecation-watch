@@ -9,10 +9,12 @@
 #                    gerenderten Seite wird als Snapshot gespeichert und verglichen.
 #
 # "id" muss eindeutig sein (wird für den gespeicherten Zustand verwendet).
+# "short" erscheint im Issue-Titel und als Label.
 
 pages:
   # --- Power Platform (enthält auch Power Automate, Dataverse, AI Builder, model-driven) ---
   - id: power-platform
+    short: Power Platform
     name: Important changes (deprecations) coming in Power Platform
     url: https://learn.microsoft.com/en-us/power-platform/important-changes-coming
     source: github
@@ -21,6 +23,7 @@ pages:
     path: power-platform/important-changes-coming.md
 
   - id: canvas-apps
+    short: Canvas Apps
     name: Important upcoming changes (deprecations) in canvas apps
     url: https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/important-changes-deprecations
     source: github
@@ -29,6 +32,7 @@ pages:
     path: powerapps-docs/maker/canvas-apps/important-changes-deprecations.md
 
   - id: power-pages
+    short: Power Pages
     name: Important upcoming changes and deprecations in Power Pages
     url: https://learn.microsoft.com/en-us/power-pages/important-changes-deprecations
     source: github
@@ -38,6 +42,7 @@ pages:
 
   # --- Dynamics 365 CE ---
   - id: d365-customer-service
+    short: D365 Customer Service
     name: Deprecations in Dynamics 365 Customer Service
     url: https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/deprecations-customer-service
     source: github
@@ -46,6 +51,7 @@ pages:
     path: ce/customer-service/implement/deprecations-customer-service.md
 
   - id: d365-sales
+    short: D365 Sales
     name: Removed or deprecated features in Dynamics 365 Sales
     url: https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales
     source: github
@@ -54,6 +60,7 @@ pages:
     path: ce/sales/deprecations-sales.md
 
   - id: d365-field-service
+    short: D365 Field Service
     name: Feature deprecations – Dynamics 365 Field Service
     url: https://learn.microsoft.com/en-us/dynamics365/field-service/deprecations-field-service
     source: github
@@ -63,16 +70,19 @@ pages:
 
   # --- Copilot Studio (kein öffentliches Docs-Repo -> Learn-Snapshot) ---
   - id: copilot-studio-whats-new
+    short: Copilot Studio
     name: What's new in Copilot Studio (Notable changes / Retirements)
     url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new
     source: learn
 
   - id: copilot-studio-models
+    short: Copilot Studio
     name: Copilot Studio – Select a primary AI model (Modell-Verfügbarkeit & Retirements)
     url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-select-agent-model
     source: learn
 
   - id: copilot-studio-retired-models
+    short: Copilot Studio
     name: Copilot Studio – Continue using a retired AI model
     url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-retired-model
     source: learn
