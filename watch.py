@@ -30,7 +30,9 @@ SNAPSHOT_DIR = ROOT / "state" / "snapshots"
 GITHUB_API = "https://api.github.com"
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 REPORT_REPO = os.environ.get("GITHUB_REPOSITORY", "")  # owner/name, von Actions gesetzt
-DRY_RUN = os.environ.get("DRY_RUN", "").lower() in ("1", "true", "yes")
+# Testmodus: GitHub-Quellen so behandeln, als wäre der letzte Check N Commits her. Erzwingt DRY_RUN.
+TEST_REWIND = int(os.environ.get("TEST_REWIND") or 0)
+DRY_RUN = os.environ.get("DRY_RUN", "").lower() in ("1", "true", "yes") or TEST_REWIND > 0
 ISSUE_LABEL = "deprecation-watch"
 
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL") or "claude-opus-5"  # leere Repo-Variable -> Default
@@ -94,6 +96,8 @@ def check_github(page: dict, page_state: dict) -> Change | None:
         return None
 
     shas = [c["sha"] for c in commits]
+    if TEST_REWIND:
+        last_sha = shas[min(TEST_REWIND, len(shas) - 1)]
     # Zuletzt gesehene SHA nicht unter den letzten 30 Commits (z. B. Force-Push oder sehr viele Commits)
     missed = last_sha not in shas
     new = commits if missed else commits[: shas.index(last_sha)]

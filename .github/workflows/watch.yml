@@ -9,6 +9,10 @@ on:
         description: "Nur anzeigen, kein Issue anlegen und keinen Zustand speichern"
         type: boolean
         default: false
+      test_rewind:
+        description: "Test: GitHub-Quellen so prüfen, als wäre der letzte Check N Commits her (erzwingt Dry-Run)"
+        type: number
+        default: 0
 
 permissions:
   contents: write # Zustand (state/) zurück committen
@@ -37,10 +41,11 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
           DRY_RUN: ${{ inputs.dry_run }}
+          TEST_REWIND: ${{ inputs.test_rewind }}
         run: python watch.py
 
       - name: Zustand speichern
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && !(inputs.test_rewind > 0) }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
