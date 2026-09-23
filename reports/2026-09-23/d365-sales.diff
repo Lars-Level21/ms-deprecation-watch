@@ -1,0 +1,57 @@
+### Commit 2254cff: Sca deprecate (#16874)
+@@ -1,7 +1,7 @@
+ ---
+ title: Removed or deprecated features in Dynamics 365 Sales
+ description: Visit this page to see the deprecating features in Dynamics 365 Sales.
+-ms.date: 07/24/2026
++ms.date: 08/18/2026
+ ms.topic: concept-article
+ author: lavanyakr01
+ ms.author: lavanyakr
+@@ -20,6 +20,12 @@ The features that have been removed or deprecated in  Dynamics 365 Sales are lis
+ > [!IMPORTANT]
+ > "Deprecated" means we intend to remove the feature or capability in a major future release. The feature or capability continues to work and is fully supported until it's officially removed. This deprecation notification might span a few years. After removal, the feature or capability will no longer work. We're notifying you now so that you have sufficient time to plan and update your code before the feature or capability is removed.  
+ 
++## Sales Close Agent
++
++Effective September 30, 2026, you can't create new instances of Sales Close Agent. To continue using agent capabilities, create an instance of [Sales Development agent](/microsoft-agent-365/use) instead.
++
++Existing instances of Sales Close Agent will be removed on October 30, 2026. To continue using agent capabilities after this date, create an instance of [Sales Development agent](/microsoft-agent-365/use).
++
+ ## Sales Hub Dialer
+  
+ Effective July 2026, the Sales Hub Dialer (preview) is deprecated and removed from all environments. The Sales Hub Dialer was an embedded softphone available in preview that allowed sellers to make and receive calls directly within the Sales Hub app by using dedicated phone numbers. After removal, sellers can no longer use this feature to make or receive calls.
+
+### Commit ada90f3: SharePoint Tools Deprecation in MCP (#16857)
+@@ -1,7 +1,7 @@
+ ---
+ title: Removed or deprecated features in Dynamics 365 Sales
+ description: Visit this page to see the deprecating features in Dynamics 365 Sales.
+-ms.date: 08/18/2026
++ms.date: 08/19/2026
+ ms.topic: concept-article
+ author: lavanyakr01
+ ms.author: lavanyakr
+@@ -20,6 +20,10 @@ The features that have been removed or deprecated in  Dynamics 365 Sales are lis
+ > [!IMPORTANT]
+ > "Deprecated" means we intend to remove the feature or capability in a major future release. The feature or capability continues to work and is fully supported until it's officially removed. This deprecation notification might span a few years. After removal, the feature or capability will no longer work. We're notifying you now so that you have sufficient time to plan and update your code before the feature or capability is removed.  
+ 
++## SharePoint MCP tools
++
++Effective August 2026, the SharePoint MCP tools `msdyn_GetDocumentSearchResults` and `msdyn_SalesAnswerFromDocuments` are deprecated. Update any customizations that use these tools. For more information about Sales MCP server and tools, see [Dynamics 365 Sales Model Context Protocol (MCP) server overview](model-context-protocol-sales-overview.md).
++
+ ## Sales Close Agent
+ 
+ Effective September 30, 2026, you can't create new instances of Sales Close Agent. To continue using agent capabilities, create an instance of [Sales Development agent](/microsoft-agent-365/use) instead.
+
+### Commit adef841: Document deprecation of playbooks feature (#17101)
+@@ -128,5 +128,9 @@ Effective October 1, 2023, the rank optimization feature of insights cards is de
+ 
+ The standalone Sales Insights Add-on package was deprecated in 2023 and is no longer supported. You can access Sales Insights capabilities through the primary Sales Insights solution in Dynamics 365 Sales instead of separate Sales Insights Anchor and Sales Insights Add-on packages that customers install on demand. This consolidation simplifies deployment and improves installation. 
+ 
++## Playbooks
++
++Effective July 2023, Microsoft deprecated the playbooks feature. You can no longer access, create, or launch playbooks. If you added playbook entries to your custom app, remove them manually. Sequences replace playbooks. [Learn more about sequences](create-manage-sequences.md).  
++
+ 
+ [!INCLUDE[footer-include](../includes/footer-banner.md)]
