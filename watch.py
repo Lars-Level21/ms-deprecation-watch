@@ -223,7 +223,7 @@ SUMMARY_SCHEMA = {
                 "properties": {
                     "kind": {"type": "string", "enum": KINDS},
                     "feature": {"type": "string", "description": "Betroffenes Feature/Produkt, kurz"},
-                    "date": {"type": "string", "description": "Relevanter Termin (TT.MM.JJJJ oder 'MM/JJJJ'), leer wenn keiner genannt"},
+                    "date": {"type": "string", "description": "Nächster handlungsrelevanter Termin (Entfernung/Supportende vor Ankündigungsdatum), TT.MM.JJJJ oder MM/JJJJ; leer wenn keiner genannt"},
                     "impact": {"type": "string", "description": "Was ändert sich / was fällt weg, 1 Satz"},
                     "action": {"type": "string", "description": "Empfohlene Maßnahme bzw. Ersatz, 1 Satz; leer wenn keine"},
                 },

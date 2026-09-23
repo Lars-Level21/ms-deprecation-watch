@@ -2,25 +2,25 @@
   "last_run": "2026-09-23T14:51:43+00:00",
   "pages": {
     "canvas-apps": {
-      "sha": "7c9a797677e843f6be13c6abcab840ad921d58a4"
+      "sha": "aaf29fc08cd6fc8c11ae0e3581bc31c0533ca1c7"
     },
     "copilot-studio-models": {},
     "copilot-studio-retired-models": {},
     "copilot-studio-whats-new": {},
     "d365-customer-service": {
-      "sha": "d30ad1c467c1291f43140170c87e038be425fe85"
+      "sha": "2a2747cc660e3f60bdb37ec0f4a36dbacf4ac408"
     },
     "d365-field-service": {
-      "sha": "eab57c7aaf8430356a3933853dcab34be9777295"
+      "sha": "efb494bcfc9feb5f8301d1ce298ef517a8f3e4b0"
     },
     "d365-sales": {
-      "sha": "adef8413291dddaa98c0c025be1eef60a955430d"
+      "sha": "e256b6fcf0cc73ab2cc72b91f16017fd5efefcb4"
     },
     "power-pages": {
-      "sha": "2344c00814877438440ac69a6d531c84f87ae528"
+      "sha": "d3f8426631f98a094982628a45c8bb4e073a2b2e"
     },
     "power-platform": {
-      "sha": "ae50eaf5b3330e0bac2064c21261cb910ea24c88"
+      "sha": "2921af3296dc8b32ebb7e6e425840d16e46a7bcb"
     }
   }
 }
