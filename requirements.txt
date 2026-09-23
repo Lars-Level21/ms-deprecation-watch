@@ -1,0 +1,4 @@
+anthropic>=1.8,<2
+beautifulsoup4>=4.12
+pyyaml>=6
+requests>=2.32

@@ -1,0 +1,78 @@
+# Seiten, die täglich auf Änderungen geprüft werden.
+#
+# source: github  -> Commits + Diff der Markdown-Datei im öffentlichen MicrosoftDocs-Repo.
+#                    Repo/Pfad findest du auf der Learn-Seite über den Bearbeiten-Stift
+#                    (oder im HTML-Meta-Tag "original_content_git_url"; dort steht das
+#                    private "-pr"-Repo – für die Watchlist das Suffix "-pr" weglassen
+#                    und Branch "main" statt "live" verwenden).
+# source: learn   -> Fallback für Seiten ohne öffentliches Repo: Textinhalt der
+#                    gerenderten Seite wird als Snapshot gespeichert und verglichen.
+#
+# "id" muss eindeutig sein (wird für den gespeicherten Zustand verwendet).
+
+pages:
+  # --- Power Platform (enthält auch Power Automate, Dataverse, AI Builder, model-driven) ---
+  - id: power-platform
+    name: Important changes (deprecations) coming in Power Platform
+    url: https://learn.microsoft.com/en-us/power-platform/important-changes-coming
+    source: github
+    repo: MicrosoftDocs/power-platform
+    branch: main
+    path: power-platform/important-changes-coming.md
+
+  - id: canvas-apps
+    name: Important upcoming changes (deprecations) in canvas apps
+    url: https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/important-changes-deprecations
+    source: github
+    repo: MicrosoftDocs/powerapps-docs
+    branch: main
+    path: powerapps-docs/maker/canvas-apps/important-changes-deprecations.md
+
+  - id: power-pages
+    name: Important upcoming changes and deprecations in Power Pages
+    url: https://learn.microsoft.com/en-us/power-pages/important-changes-deprecations
+    source: github
+    repo: MicrosoftDocs/power-pages-docs
+    branch: main
+    path: power-pages-docs/important-changes-deprecations.md
+
+  # --- Dynamics 365 CE ---
+  - id: d365-customer-service
+    name: Deprecations in Dynamics 365 Customer Service
+    url: https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/deprecations-customer-service
+    source: github
+    repo: MicrosoftDocs/dynamics-365-customer-engagement
+    branch: main
+    path: ce/customer-service/implement/deprecations-customer-service.md
+
+  - id: d365-sales
+    name: Removed or deprecated features in Dynamics 365 Sales
+    url: https://learn.microsoft.com/en-us/dynamics365/sales/deprecations-sales
+    source: github
+    repo: MicrosoftDocs/dynamics-365-customer-engagement
+    branch: main
+    path: ce/sales/deprecations-sales.md
+
+  - id: d365-field-service
+    name: Feature deprecations – Dynamics 365 Field Service
+    url: https://learn.microsoft.com/en-us/dynamics365/field-service/deprecations-field-service
+    source: github
+    repo: MicrosoftDocs/dynamics-365-customer-engagement
+    branch: main
+    path: ce/field-service/deprecations-field-service.md
+
+  # --- Copilot Studio (kein öffentliches Docs-Repo -> Learn-Snapshot) ---
+  - id: copilot-studio-whats-new
+    name: What's new in Copilot Studio (Notable changes / Retirements)
+    url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new
+    source: learn
+
+  - id: copilot-studio-models
+    name: Copilot Studio – Select a primary AI model (Modell-Verfügbarkeit & Retirements)
+    url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-select-agent-model
+    source: learn
+
+  - id: copilot-studio-retired-models
+    name: Copilot Studio – Continue using a retired AI model
+    url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-retired-model
+    source: learn

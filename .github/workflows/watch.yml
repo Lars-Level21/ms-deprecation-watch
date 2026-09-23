@@ -1,0 +1,49 @@
+name: Deprecation Watch
+
+on:
+  schedule:
+    - cron: "0 5 * * *" # täglich 05:00 UTC (07:00 MESZ / 06:00 MEZ)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Nur anzeigen, kein Issue anlegen und keinen Zustand speichern"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # Zustand (state/) zurück committen
+  issues: write # Report-Issue anlegen
+
+concurrency:
+  group: deprecation-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Seiten prüfen
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: python watch.py
+
+      - name: Zustand speichern
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state
+          git diff --cached --quiet || git commit -m "chore: Deprecation-Watch Zustand $(date -u +%F)"
+          git push
