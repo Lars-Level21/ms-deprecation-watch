@@ -1,0 +1,56 @@
+--- gestern
++++ heute
+@@ -4,7 +4,7 @@
+ 
+ ## Released versions
+ 
+-For information about the new features, fixes, and improvements released in the past few weeks, see Released versions of Microsoft Copilot Studio.
++Get an overview of new capabilities in the Roadmap. You can filter for products and specific areas and learn what's coming when.
+ 
+ Note
+ 
+@@ -14,6 +14,34 @@
+ 
+ The following sections list features released in the past months, with links to related information.
+ 
++### September 2026
++
++- Add an extract node to a workflow to pull named values and tables out of documents, such as invoices, contracts, and financial statements, so later steps can use the extracted data.
++
++- (Preview) Add a Copilot node to a workflow to run Copilot Chat or a Cowork task, grounded in the connected user's mail, files, calendar, and chats, and to call agents like Researcher and Analyst or your own Agent Builder agents.
++
++- Choose a model for your agent powered by the GitHub Copilot harness from a simple dropdown menu, and try out experimental models early to evaluate them before they're production-ready.
++
++- Configure a content safety test method to evaluate your agent's responses for potentially harmful content, such as hateful, sexual, violent, or self-harm content, with configurable severity thresholds.
++
++- (General availability) Attach files to a conversation so your agent can read, summarize, or otherwise reason over them, now expanded to support Excel, PowerPoint, and Word files.
++
++- Add Dataverse tables as a knowledge source to ground your agent in your organization's Dataverse data, including (preview) unstructured reasoning over Multiline Text and File columns so your agent can find answers in notes, descriptions, and attached documents, not just structured fields.
++
++### August 2026
++
++- Learn about usage-based billing for agents, workflows, and apps powered by the GitHub Copilot harness, measured in Copilot Credits. Purchase and manage your Copilot Credits through pay-as-you-go or one-year prepaid plans in the Power Platform admin center.
++
++- (Preview) Connect your agent to Fabric IQ to ground responses in business data and analytics from Microsoft Fabric, generating insights grounded in your organization's semantic model.
++
++- Onboard to Microsoft Agent 365 for centralized governance of Copilot Studio agents, including identity representation in Microsoft Entra, Conditional Access and access governance workflows, and centralized observability across your agents.
++
++- Control image rendering and embedded URLs in agent responses to help protect users from untrusted or potentially harmful content, configurable per environment or environment group in the Power Platform admin center.
++
++- Add Azure SQL tables as a knowledge source to ground your agent in structured data from your Azure SQL database or SQL Server, so it can answer questions directly from your business data.
++
++- (Preview) Add Work IQ to your agents to ground them in real-time, shared context across your organization, connecting signals from files, emails, meetings, chats, and Business Applications across Microsoft 365.
++
+ ### July 2026
+ 
+ - Starting in July 2026, Copilot Studio automatically creates a Microsoft Entra Agent ID for every new agent, and you can no longer opt out at the environment level.
+@@ -32,7 +60,7 @@
+ 
+ - (Production-ready preview) Use the new experience in Copilot Studio to build agents. The GitHub Copilot harness uses an enhanced orchestration runtime for improved response quality and reasoning, available alongside the standard harness.
+ 
+-- Use Microsoft IQ for agents powered by the GitHub Copilot harness to connect your agent to organizational data, giving it access to emails, calendar events, files, Teams messages, and people information.
++- Use Work IQ for agents powered by the GitHub Copilot harness to connect your agent to organizational data, giving it access to emails, calendar events, files, Teams messages, and people information.
+ 
+ - Build and reuse skills for agents powered by the GitHub Copilot harness to extend your agent's capabilities with modular, self-contained sets of instructions. Create a skill once, add it to multiple agents, and export it as a Markdown file or package to share with others.
+ 
+
