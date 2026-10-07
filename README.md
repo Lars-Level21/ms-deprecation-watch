@@ -152,3 +152,7 @@ DRY_RUN=1 .venv/Scripts/python watch.py
 With `DRY_RUN=1`, no issue is created and no state is saved.
 `TEST_REWIND=3` checks the GitHub sources as if the last check was 3 commits ago
 (forces a dry run). In Actions, the same is available as the `test_rewind` input when starting manually.
+
+## License
+
+[MIT](LICENSE)
