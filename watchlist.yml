@@ -1,18 +1,18 @@
-# Seiten, die täglich auf Änderungen geprüft werden.
+# Pages that are checked for changes every day.
 #
-# source: github  -> Commits + Diff der Markdown-Datei im öffentlichen MicrosoftDocs-Repo.
-#                    Repo/Pfad findest du auf der Learn-Seite über den Bearbeiten-Stift
-#                    (oder im HTML-Meta-Tag "original_content_git_url"; dort steht das
-#                    private "-pr"-Repo – für die Watchlist das Suffix "-pr" weglassen
-#                    und Branch "main" statt "live" verwenden).
-# source: learn   -> Fallback für Seiten ohne öffentliches Repo: Textinhalt der
-#                    gerenderten Seite wird als Snapshot gespeichert und verglichen.
+# source: github  -> commits + diff of the Markdown file in the public MicrosoftDocs repo.
+#                    Find repo/path via the edit pencil on the Learn page
+#                    (or in the HTML meta tag "original_content_git_url"; it points to the
+#                    private "-pr" repo – for the watchlist, drop the "-pr" suffix
+#                    and use branch "main" instead of "live").
+# source: learn   -> fallback for pages without a public repo: the text content of the
+#                    rendered page is stored as a snapshot and compared.
 #
-# "id" muss eindeutig sein (wird für den gespeicherten Zustand verwendet).
-# "short" erscheint im Issue-Titel und als Label.
+# "id" must be unique (it is used for the stored state).
+# "short" appears in the issue title and as a label.
 
 pages:
-  # --- Power Platform (enthält auch Power Automate, Dataverse, AI Builder, model-driven) ---
+  # --- Power Platform (also covers Power Automate, Dataverse, AI Builder, model-driven) ---
   - id: power-platform
     short: Power Platform
     name: Important changes (deprecations) coming in Power Platform
@@ -68,7 +68,7 @@ pages:
     branch: main
     path: ce/field-service/deprecations-field-service.md
 
-  # --- Copilot Studio (kein öffentliches Docs-Repo -> Learn-Snapshot) ---
+  # --- Copilot Studio (no public docs repo -> Learn snapshot) ---
   - id: copilot-studio-whats-new
     short: Copilot Studio
     name: What's new in Copilot Studio (Notable changes / Retirements)
@@ -77,7 +77,7 @@ pages:
 
   - id: copilot-studio-models
     short: Copilot Studio
-    name: Copilot Studio – Select a primary AI model (Modell-Verfügbarkeit & Retirements)
+    name: Copilot Studio – Select a primary AI model (model availability & retirements)
     url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-select-agent-model
     source: learn
 
