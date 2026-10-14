@@ -1,0 +1,42 @@
+--- previous
++++ current
+@@ -30,7 +30,7 @@
+ 
+ | Model | Tag/Category | Asia | Australia | Brazil | Canada | Europe (Except UK) | India | Japan | Korea | Saudi Arabia | Singapore | South Africa | United Kingdom | United States |
+ 
+-| GPT-4o | General | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired |
++| GPT Chat Latest | General | Default (cross-geo) | Default | Default (cross-geo) | Default (cross-geo) | Default | Default (cross-geo) | Default (cross-geo) | Default (cross-geo) | Default (cross-geo) | Default (cross-geo) | Default (cross-geo) | Default | Default |
+ 
+ | GPT-4.1 | General | GA (cross-geo) | GA | GA (cross-geo) | GA (cross-geo) | GA | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA | GA |
+ 
+@@ -40,15 +40,9 @@
+ 
+ | GPT-5 Auto | Auto | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview |
+ 
+-| GPT-5.3 Chat | General | - | - | - | - | - | - | - | - | - | - | - | - | Experimental (early access environment) |
++| GPT-5.3 Chat | General | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview |
+ 
+-| GPT-5.4 Reasoning | Deep | - | - | - | - | - | - | - | - | - | - | - | - | Experimental (early access environment) |
+-
+-| GPT-5.5 Chat | General | Default | Default | Default | Default | Default | Default | Default | Default | Default | Default | Default | Default | Default |
+-
+-| GPT-5.5 Reasoning | Deep | - | - | - | - | - | - | - | - | - | - | - | - | Experimental (early access environment) |
+-
+-| Claude Sonnet 4.5 | General | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired | Retired |
++| GPT-5.5 Chat | General | GA (cross-geo) | GA | GA (cross-geo) | GA (cross-geo) | GA | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA | GA |
+ 
+ | Claude Sonnet 4.6 | General | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA |
+ 
+@@ -56,9 +50,9 @@
+ 
+ | Claude Opus 4.7 | Deep | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA |
+ 
+-| Grok 4.1 Fast (Non-reasoning) (see important note below) | General | - | - | - | - | - | - | - | - | - | - | - | - | Experimental (early access environment) |
++| Claude Opus 4.8 | Deep | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA |
+ 
+-| Mistral Medium 3.5 | General | Experimental (cross-geo) | Experimental (cross-geo) | Experimental (cross-geo) | Experimental (cross-geo) | Experimental | Experimental (cross-geo) | Experimental (cross-geo) | Experimental (cross-geo) | Experimental (cross-geo) | Experimental (cross-geo) | Experimental (cross-geo) | Experimental (cross-geo) | Experimental (cross-geo) |
++| Grok 4.2 | Deep | - | - | - | - | - | - | - | - | - | - | - | - | Experimental (early access environment) |
+ 
+ Note
+ 
+
