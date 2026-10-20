@@ -42,7 +42,7 @@ The following tables show the availability status of selected models across regi
 
 | GPT-5.3 Chat | General | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview (cross-geo) | Preview |
 
-| GPT-5.5 Chat | General | GA (cross-geo) | GA | GA (cross-geo) | GA (cross-geo) | GA | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA | GA |
+| GPT-5.5 Chat | General | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA |
 
 | Claude Sonnet 4.6 | General | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA (cross-geo) | GA |
 
