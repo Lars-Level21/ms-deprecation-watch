@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-10-29T11:11:16+00:00",
+  "last_run": "2026-10-30T11:05:59+00:00",
   "pages": {
     "canvas-apps": {
       "sha": "6d1e70ba261f80bddd70a03fdfaf830187f1f59a"
@@ -20,7 +20,7 @@
       "sha": "888c4ae4a60152d867cd3f8e61a3b8596734fe9a"
     },
     "power-platform": {
-      "sha": "216822665b134cd842f514f213385a961dfaab9a"
+      "sha": "5a32b903e3501d71928d73c9414615412373f6b2"
     }
   }
 }
