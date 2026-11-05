@@ -112,7 +112,7 @@ The following sections list features released in the past months, with links to 
 
 - Use the agent usage estimator to forecast Copilot credit consumption across Copilot Studio and Dynamics 365 agents before deploying at scale.
 
-- (Preview) Analyze your agent with custom metrics by defining your own analytics categories and visualizing results alongside built-in analytics.
+- (Preview) Analyze your agent with custom metrics by describing a business-specific outcome in natural language. Copilot Studio generates classification or numeric scoring criteria and calculates the results alongside built-in analytics.
 
 - (General availability) Connect agents to other agents using the agent-to-agent (A2A) protocol.
 
