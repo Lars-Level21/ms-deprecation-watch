@@ -14,6 +14,42 @@ Releases roll out over several days. New or updated functionality might not appe
 
 The following sections list features released in the past months, with links to related information.
 
+### October 2026
+
+- (Preview) Build agents powered by the new Customer Conversation harness to handle customer-facing conversations over speech and chat, with specialized sub-agents that can escalate unresolved issues to a human representative, similar to a contact center. Start building from Copilot Studio or the Microsoft Contact Center Intelligence portal—both use the same authoring experience, but only the portal lets you connect the agent to a live contact center. Agents on this harness use Copilot Credits for usage-based billing.
+
+- Control which knowledge sources makers can add to their agents from the Power Platform admin center. Restrict access to local file uploads, SharePoint and OneDrive, or public websites—independently or together—to match your organization's data governance policies.
+
+- (General availability) Use Work IQ, now added by default to every new agent powered by the GitHub Copilot harness, to ground your agent's responses in real-time context from your organization's files, emails, meetings, and chats. Write operations are enabled by default, subject to your organization's permissions and policies.
+
+- Keep your agent on its current AI model for up to 30 days after Copilot Studio upgrades it to a new default, giving you time to test and migrate before support for the retired model ends.
+
+- Connect MCP-compatible tools, like Visual Studio Code and GitHub Copilot CLI, to Copilot Studio MCP so you can create, test, deploy, and monitor your agents and workflows without leaving the tool you already use.
+
+- (Preview) Ask Copilot Studio to upgrade an agent from the standard harness to the GitHub Copilot harness. The upgrade carries over instructions, tools, and prompts, rebuilds topics as skills or workflows, and gives you a migration report showing what came over, what needs attention, and what was skipped.
+
+- (Preview) Connect external clients to your agent with the new MCP and Agent2Agent (A2A) channels. Expose your agent as a remote MCP server or A2A agent so other tools, IDEs, and orchestrators can call it, authenticated with Microsoft Entra ID.
+
+- Add OneDrive for Business as a knowledge source for your agent, with support for Microsoft Purview sensitivity labels. The Add knowledge dialog also suggests relevant sources and uses SharePoint document titles to improve how your agent finds answers.
+
+- (Preview) Browse and add marketplace-shared skills to your agent, and share your own skills with specific people or your whole organization. Recipients get notified when you update a shared skill.
+
+- (Preview) Give your agent its own account, with a Microsoft Entra ID, mailbox, and presence in Microsoft Teams and your organization's directory. Your agent can then take a business process from start to finish, responding to email, Teams messages, and Office comments with its own identity.
+
+- (Preview) Add triggers to run your agent autonomously when an event happens in a connected service, such as a new SharePoint item, an incoming email, or a scheduled time. Share the autonomous agent with others so they can run it with their own credentials.
+
+- Connected agents now support more options:
+
+- Connect agents hosted in Microsoft Foundry or built with the Microsoft 365 Agents SDK, in addition to other Copilot Studio agents.
+
+- (Preview) Add an Agent2Agent (A2A) agent as a connected agent to delegate tasks to agents built outside Copilot Studio.
+
+- Use GPT-5.5 Chat as the new default model for agents on the standard harness. Claude Opus 4.8 is now generally available, and GPT-5.3 Chat is available in preview.
+
+- (Preview) Configure a privacy statement link that appears at the start of agent conversations, so users can review your organization's privacy policy before they chat with your agent.
+
+- Starting October 23, 2026, you can no longer connect new agents to WhatsApp through the Azure Communication Services-based channel. Agents already connected before that date continue to work.
+
 ### September 2026
 
 - Add an extract node to a workflow to pull named values and tables out of documents, such as invoices, contracts, and financial statements, so later steps can use the extracted data.
