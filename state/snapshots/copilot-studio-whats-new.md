@@ -20,13 +20,13 @@ The following sections list features released in the past months, with links to 
 
 - Control which knowledge sources makers can add to their agents from the Power Platform admin center. Restrict access to local file uploads, SharePoint and OneDrive, or public websites—independently or together—to match your organization's data governance policies.
 
-- (General availability) Use Work IQ, now added by default to every new agent powered by the GitHub Copilot harness, to ground your agent's responses in real-time context from your organization's files, emails, meetings, and chats. Write operations are enabled by default, subject to your organization's permissions and policies.
+- (General availability) Use Work IQ, now added by default to every new agent powered by the Microsoft Copilot harness, to ground your agent's responses in real-time context from your organization's files, emails, meetings, and chats. Write operations are enabled by default, subject to your organization's permissions and policies.
 
 - Keep your agent on its current AI model for up to 30 days after Copilot Studio upgrades it to a new default, giving you time to test and migrate before support for the retired model ends.
 
 - Connect MCP-compatible tools, like Visual Studio Code and GitHub Copilot CLI, to Copilot Studio MCP so you can create, test, deploy, and monitor your agents and workflows without leaving the tool you already use.
 
-- (Preview) Ask Copilot Studio to upgrade an agent from the standard harness to the GitHub Copilot harness. The upgrade carries over instructions, tools, and prompts, rebuilds topics as skills or workflows, and gives you a migration report showing what came over, what needs attention, and what was skipped.
+- (Preview) Ask Copilot Studio to upgrade an agent from the standard harness to the Microsoft Copilot harness. The upgrade carries over instructions, tools, and prompts, rebuilds topics as skills or workflows, and gives you a migration report showing what came over, what needs attention, and what was skipped.
 
 - (Preview) Connect external clients to your agent with the new MCP and Agent2Agent (A2A) channels. Expose your agent as a remote MCP server or A2A agent so other tools, IDEs, and orchestrators can call it, authenticated with Microsoft Entra ID.
 
@@ -56,7 +56,7 @@ The following sections list features released in the past months, with links to 
 
 - (Preview) Add a Copilot node to a workflow to run Copilot Chat or a Cowork task, grounded in the connected user's mail, files, calendar, and chats, and to call agents like Researcher and Analyst or your own Agent Builder agents.
 
-- Choose a model for your agent powered by the GitHub Copilot harness from a simple dropdown menu, and try out experimental models early to evaluate them before they're production-ready.
+- Choose a model for your agent powered by the Microsoft Copilot harness from a simple dropdown menu, and try out experimental models early to evaluate them before they're production-ready.
 
 - Configure a content safety test method to evaluate your agent's responses for potentially harmful content, such as hateful, sexual, violent, or self-harm content, with configurable severity thresholds.
 
@@ -66,7 +66,7 @@ The following sections list features released in the past months, with links to 
 
 ### August 2026
 
-- Learn about usage-based billing for agents, workflows, and apps powered by the GitHub Copilot harness, measured in Copilot Credits. Purchase and manage your Copilot Credits through pay-as-you-go or one-year prepaid plans in the Power Platform admin center.
+- Learn about usage-based billing for agents, workflows, and apps powered by the Microsoft Copilot harness, measured in Copilot Credits. Purchase and manage your Copilot Credits through pay-as-you-go or one-year prepaid plans in the Power Platform admin center.
 
 - (Preview) Connect your agent to Fabric IQ to ground responses in business data and analytics from Microsoft Fabric, generating insights grounded in your organization's semantic model.
 
@@ -82,7 +82,7 @@ The following sections list features released in the past months, with links to 
 
 - Starting in July 2026, Copilot Studio automatically creates a Microsoft Entra Agent ID for every new agent, and you can no longer opt out at the environment level.
 
-- (Preview) Add a workflow or MCP server as a tool for agents powered by the GitHub Copilot harness to extend your agent with multistep automated processes or external services.
+- (Preview) Add a workflow or MCP server as a tool for agents powered by the Microsoft Copilot harness to extend your agent with multistep automated processes or external services.
 
 - (Preview) Submit your MCP server for Microsoft certification to give customers and administrators confidence that it meets Microsoft's expectations for reliability, security, compliance, and responsible operation.
 
@@ -90,17 +90,17 @@ The following sections list features released in the past months, with links to 
 
 - (Preview) Export environment-level agent telemetry to Azure Application Insights through the Power Platform admin center.
 
-- (Preview) Let users attach files to a conversation and view files your agent creates during a conversation, for agents powered by the GitHub Copilot harness.
+- (Preview) Let users attach files to a conversation and view files your agent creates during a conversation, for agents powered by the Microsoft Copilot harness.
 
 ### June 2026
 
-- (Production-ready preview) Use the new experience in Copilot Studio to build agents. The GitHub Copilot harness uses an enhanced orchestration runtime for improved response quality and reasoning, available alongside the standard harness.
+- (Production-ready preview) Use the new experience in Copilot Studio to build agents. The Microsoft Copilot harness uses an enhanced orchestration runtime for improved response quality and reasoning, available alongside the standard harness.
 
-- Use Work IQ for agents powered by the GitHub Copilot harness to connect your agent to organizational data, giving it access to emails, calendar events, files, Teams messages, and people information.
+- Use Work IQ for agents powered by the Microsoft Copilot harness to connect your agent to organizational data, giving it access to emails, calendar events, files, Teams messages, and people information.
 
-- Build and reuse skills for agents powered by the GitHub Copilot harness to extend your agent's capabilities with modular, self-contained sets of instructions. Create a skill once, add it to multiple agents, and export it as a Markdown file or package to share with others.
+- Build and reuse skills for agents powered by the Microsoft Copilot harness to extend your agent's capabilities with modular, self-contained sets of instructions. Create a skill once, add it to multiple agents, and export it as a Markdown file or package to share with others.
 
-- Turn on memory for agents powered by the GitHub Copilot harness to give your agent persistent context across interactions. It captures user preferences and patterns, stores them per user, and applies them to deliver more relevant and personalized responses over time.
+- Turn on memory for agents powered by the Microsoft Copilot harness to give your agent persistent context across interactions. It captures user preferences and patterns, stores them per user, and applies them to deliver more relevant and personalized responses over time.
 
 - (General availability) Use the Windows 365 for Agents MCP server to give your agents full operational control of a Windows 365 cloud PC, including desktop interaction, browser automation, and semantic UI inspection.
 
@@ -108,9 +108,9 @@ The following sections list features released in the past months, with links to 
 
 - (Preview) Integrate voice agents with Teams Phone Agent to handle specialized call workflows like billing, prescription refills, and order status, with a seamless handoff between Teams Phone Agent and your custom voice agent.
 
-- (Preview) Connect other agents to your agent powered by the GitHub Copilot harness so it can delegate requests to specialized agents, letting you build modular solutions with a single front-door agent routing to the right specialist.
+- (Preview) Connect other agents to your agent powered by the Microsoft Copilot harness so it can delegate requests to specialized agents, letting you build modular solutions with a single front-door agent routing to the right specialist.
 
-- (Preview) Connect your agent to Foundry IQ for agents powered by the GitHub Copilot harness to ground responses in a knowledge base already built and tuned in Azure AI Foundry.
+- (Preview) Connect your agent to Foundry IQ for agents powered by the Microsoft Copilot harness to ground responses in a knowledge base already built and tuned in Azure AI Foundry.
 
 - (General availability) Select Claude Sonnet 5 or GPT-5.5 Chat as your agent's primary AI model for improved response quality and reasoning.
 
