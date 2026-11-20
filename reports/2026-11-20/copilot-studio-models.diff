@@ -1,0 +1,12 @@
+--- previous
++++ current
+@@ -128,6 +128,8 @@
+ 
+ For Federal Risk and Authorization Management Program (FedRAMP) tenants and for environments outside the United States where cross-geo data movement is restricted, GPT-4.1 and GPT-5 will remain supported and won't retire as part of this migration. Learn more about availability and eligibility in Move data across regions for Copilots, AI agents, and generative AI features.
+ 
++If your agent uses the GPT Chat Latest alias, or is part of a managed solution whose model can't be edited, Copilot Studio automatically moves the agent's traffic to the alias's current underlying model or the environment's default model when a model retires. You don't need to republish the agent for this change to take effect.
++
+ ## Limitations of experimental and preview models
+ 
+ You can explore and test experimental and preview models, but don't use them for production:
+
