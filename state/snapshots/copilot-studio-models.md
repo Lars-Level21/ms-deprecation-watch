@@ -68,6 +68,10 @@ Microsoft's safety and responsible AI evaluations found Grok-4.1 Fast (Non-Reaso
 
 | GPT-4o | Default | Default | Default |
 
+Note
+
+If an expected generally available model doesn't appear in your model list, your environment might be subject to additional compliance controls that limit which models are available. If you believe this restriction doesn't apply to your environment, contact Microsoft Support.
+
 ### Model use categories
 
 Models are optimized for different purposes. Your agent can perform better when you choose a model with the strengths that fit your agent's purpose. For example, an agent that makes complex decisions can benefit from a deep model, while an agent expected to talk about a wide range of topics could use a general model.
